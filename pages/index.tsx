@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { useEffect, useMemo, useState } from 'react'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBrush, faGear, faHeadset, faMessage, faUserGroup, faUsers } from "@fortawesome/free-solid-svg-icons"
 const Home: NextPage = () => {
   const router = useRouter()
   const [currentPage, setCurrentPage] = useState(0)
@@ -22,23 +23,29 @@ const Home: NextPage = () => {
     <div className="lg:flex-row flex flex-col">
       <aside className="lg:h-screen lg:w-1/6 lg:mt-0 lg:overflow-auto bg-black w-full mt-20 overflow-scroll  ">
         <div className="lg:block lg:w-24 lg:h-24 hidden "></div>
-        <ul className="lg:block  flex text-left w-full ">
+        <ul className="lg:block  flex text-left w-full justify-between">
           <li className="lists" onClick={() => controller(0)}>
+            <FontAwesomeIcon icon={faUsers} />
             <span>Users</span>
           </li>
           <li className="lists" onClick={() => controller(1)}>
+            <FontAwesomeIcon icon={faBrush} />
             <span>Login Screen</span>
           </li>
           <li className="lists" onClick={() => controller(2)}>
+            <FontAwesomeIcon icon={faUserGroup} />
             <span>Cliques</span>
           </li>
           <li className="lists" onClick={() => controller(3)}>
+            <FontAwesomeIcon icon={faHeadset} />
             <span>Support</span>
           </li>
           <li className="lists" onClick={() => controller(4)}>
+            <FontAwesomeIcon icon={faMessage} />
             <span>Feedback</span>
           </li>
           <li className="lists" onClick={() => controller(5)}>
+            <FontAwesomeIcon icon={faGear} />
             <span>Settings</span>
           </li>
         </ul>

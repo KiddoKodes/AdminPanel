@@ -1,9 +1,9 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { RecoilRoot } from 'recoil'
 import AuthenticatedRoutes from '../components/AuthenticatedRoutes'
 import Head from 'next/head'
-
+import '../styles/globals.css'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>

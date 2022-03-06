@@ -5,11 +5,11 @@ export const login = async (email: string, password: string) => {
       email,
       password,
     })
-    if (response.data.user) {
+    if (response.data.token) {
       return {
         loading: false,
         isAuthenticated: true,
-        user: response.data.user,
+        user: response.data.token,
       }
     } else {
       return { loading: false, isAuthenticated: false, user: null }
