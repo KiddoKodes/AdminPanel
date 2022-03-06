@@ -19,10 +19,10 @@ const Home: NextPage = () => {
     setCurrentPage(newPage)
   }
   return (
-    <div className="flex">
-      <aside className="h-screen bg-black w-1/6">
-        <div className="w-24 h-24"></div>
-        <ul className="text-left">
+    <div className="lg:flex-row flex flex-col">
+      <aside className="lg:h-screen lg:w-1/6 lg:mt-0 lg:overflow-auto bg-black w-full mt-20 overflow-scroll  ">
+        <div className="lg:block lg:w-24 lg:h-24 hidden "></div>
+        <ul className="lg:block  flex text-left w-full ">
           <li className="lists" onClick={() => controller(0)}>
             <span>Users</span>
           </li>
@@ -43,8 +43,8 @@ const Home: NextPage = () => {
           </li>
         </ul>
       </aside>
-      <main className="w-5/6">
-        <header className="w-full bg-black h-20 flex justify-center items-center">
+      <main className="lg:w-5/6 w-full">
+        <header className="lg:relative absolute top-0 w-full bg-black h-20 flex justify-center items-center">
           <img src="/TMP.ico" alt="TMP" className="w-10 h-10" />
           <h1 className="text-2xl font-bold ml-4">The Movieplay Admin</h1>
         </header>

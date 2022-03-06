@@ -6,7 +6,7 @@ import Login from './Login'
 
 const AuthenticatedRoutes = ({ children }: any) => {
     const [{ isAuthenticated, loading }, _] = useRecoilState(authState)
-    if (!isAuthenticated && !loading) {
+    if (isAuthenticated && !loading) {
         return <>{children}</>
     }
     else if (loading && !isAuthenticated) {

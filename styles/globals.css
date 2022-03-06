@@ -23,11 +23,11 @@ body {
 /* Dashboard */
 /* Sidebar */
 .lists {
-  @apply cursor-pointer p-4 font-bold transition hover:bg-green-600 hover:text-black;
+  @apply w-20 min-w-max cursor-pointer p-4 text-center font-bold transition hover:bg-green-600 hover:text-black lg:w-full;
 }
 .lists.active {
   @apply bg-green-600 text-black;
 }
 .lists span {
-  @apply ml-10;
+  @apply m-auto lg:ml-10;
 }
