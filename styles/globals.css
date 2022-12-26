@@ -13,11 +13,17 @@ body {
   @apply my-4 w-full rounded bg-zinc-800 p-2 text-white caret-green-900 outline-none;
 }
 .btn {
-  @apply my-4 w-full bg-gradient-to-r from-lime-600 to-lime-900 py-2 text-xl font-semibold text-black;
+  @apply my-4 w-full cursor-pointer bg-gradient-to-r from-lime-600 to-lime-900 py-2 text-xl font-semibold text-black;
 }
 
 .overlay {
-  @apply pointer-events-none absolute top-0 left-0 z-10  h-screen w-screen bg-black opacity-80;
+  @apply pointer-events-none absolute top-0 left-0 z-10  min-h-full w-full bg-black opacity-80;
+}
+.center {
+  @apply flex items-center justify-center;
+}
+.center-no-flex {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 /* specific styles */
 /* Dashboard */

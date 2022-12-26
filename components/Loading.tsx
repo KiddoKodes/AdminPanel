@@ -2,7 +2,7 @@ import React from 'react'
 
 const Loading = () => {
     return (
-        <div className="flex justify-center items-center w-full h-full absolute flex-col">
+        <div className="center w-full h-full absolute flex-col">
             <div className="overlay">
             </div>
             <div className="z-20 text-center">
